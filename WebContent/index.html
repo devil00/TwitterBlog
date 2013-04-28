@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="description" content="create login form">
+<title>Twitter Demo</title>
+<style  type="text/css">
+#Menu ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+li
+{
+display:inline;
+}
+.header{
+position:absolute;
+right:10px;
+width:500px;
+left:20px;
+background-color:#b0e0e6;
+
+	}
+	
+#picture{
+	position:absolute;
+	left:400px;
+}	
+.login-form{
+position:absolute;
+top:200px;
+left:400px;
+
+	}
+.footer{
+	position:absolute;
+	top:400px;
+	left:300px;
+}
+body{
+	background-image:url("Images/twitter-bg.jpg");
+}
+</style>
+</head>
+<body>
+<div class='wrapper'>
+<div class='header'>
+<small>New To Twitter</small>
+<img id ='picture' src="Images/images.jpg" width="20" height="20"/>
+<form action="SignUpAction" method='post'  name= "signupForm"> 
+<fieldset class="textbox">
+          <input class="js-username-field" type="text" placeholder='username' name="userName"/>
+      <input class="js-password-field" type="password"  placeholder='password' name="userPassword"/>
+      <input type="submit" value='Sign Up' / >
+  </fieldset>
+</form>
+</div>
+<div class='login-form'>
+<form action="LoginAction" method='post' name="signupIn">
+              <center>
+              <label>Enter the Username</label>
+                     <input type="text" name="username" /> <br/>
+              <label>Enter the Password</label>
+              <input type="password" name="password"  /><br/>
+              <input type="submit" value="Login" name="submit" class="submit" />
+              </center>
+              </form>
+</div>
+<div class='footer'>
+<center>
+<ul id='Menu'>
+      <li><a href="/about">About</a><span class="dot divider"> &middot;</span></li>
+      <li><a href="http://blog.twitter.com">Blog</a><span class="dot divider"> &middot;</span></li>
+      <li><a href="//dev.twitter.com">Developers</a><span class="dot divider"> &middot;</span></li>
+      <li><a href="/about/resources">Resources</a><span class="dot divider"> &middot;</span></li>
+      <li><span class="copyright">&copy; 2013 Twitter</span></li>
+    </ul>
+    </center>
+</div>
+</div>
+</body>
+
+</html>
+
